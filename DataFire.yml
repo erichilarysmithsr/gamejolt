@@ -20,3 +20,10 @@ paths:
     get:
       action: fantasydata_nascar_v2/DriverDetails
       accounts: {}
+tests:
+  test:
+    action: fantasydata_nascar_v2/DriverDetails
+    accounts: {}
+    input:
+      format: '""'
+      driverid: '""'
