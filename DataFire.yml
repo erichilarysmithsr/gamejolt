@@ -2,3 +2,16 @@ options:
   cors: true
 actions:
   action: ./actions/action.js
+tasks:
+  task:
+    schedule: cron(5 8 ? * 0)
+    action: fantasydata_nascar_v2/DriverDetails
+    accounts: {}
+    monitor:
+      action: fantasydata_nascar_v2/DriverDetails
+      accounts: {}
+      trackBy: ''
+      array: ''
+      input:
+        format: '""'
+        driverid: '""'
